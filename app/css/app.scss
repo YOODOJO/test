@@ -1,0 +1,34 @@
+/* app css stylesheet */
+
+header, footer {
+	padding-left: 18px;
+}
+
+footer {
+	background: #ddd;
+	height: 100px;
+}
+
+section {
+	padding: 6px;
+}
+
+ul {
+	padding-left: 12px;
+}
+
+li {
+	list-style-type: none;
+	border-bottom: 1px solid #aaa;
+	padding: 6px 0 0 0;
+}
+
+form {
+	padding: 6px;
+	margin: 6px 0 0 12px;
+	background: #ddd;
+}
+
+#container-data {
+	background: #ccc;
+}

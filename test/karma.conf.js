@@ -1,35 +1,36 @@
 module.exports = function (config) {
 	config.set({
 
-				basePath: '../',
+		basePath: '../',
 
-				files: [
-					'app/bower_components/angular/angular.js',
-					'app/bower_components/angular-route/angular-route.js',
-					'app/bower_components/angular-mocks/angular-mocks.js',
-					'app/js/**/*.js',
-					'test/unit/**/*.js'
-				],
+		files: [
+			'app/bower_components/angular/angular.js',
+			'app/bower_components/angular-route/angular-route.js',
+			'app/bower_components/angular-mocks/angular-mocks.js',
+			'app/js/**/*.js',
+			'test/unit/**/*.js'
+		],
 
-				autoWatch: true,
+		autoWatch: true,
 
-				frameworks: ['jasmine'],
+		frameworks: ['jasmine'],
 
-			//	browsers: ['Chrome', 'Firefox', 'IE', 'phantomjs'],
-				browsers: ['Chrome', 'IE', 'PhantomJS'],
+	//	browsers: ['Chrome', 'Firefox', 'IE', 'phantomjs'],
+		browsers: ['Chrome', 'IE', 'PhantomJS'],
 
-				plugins: [
-					'karma-chrome-launcher',
-				//	'karma-firefox-launcher',
-					'karma-ie-launcher',
-					'karma-phantomjs-launcher',
-					'karma-jasmine'
-				],
+		plugins: [
+			'karma-chrome-launcher',
+		//	'karma-firefox-launcher',
+			'karma-ie-launcher',
+		//	'karma-opera-launcher',
+			'karma-phantomjs-launcher',
+			'karma-jasmine'
+		],
 
-				junitReporter: {
-					outputFile: 'test_out/unit.xml',
-					suite: 'unit'
-				}
+		junitReporter: {
+			outputFile: 'test_out/unit.xml',
+			suite: 'unit'
+		}
 
-			});
+	});
 };
